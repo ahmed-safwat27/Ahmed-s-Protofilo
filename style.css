@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #000;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark {
+  background: #111;
+  color: #eee;
+}
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.logo {
+  color: crimson;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.menu-btn, .dark-mode-toggle {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+.ooro{
+  color: white;
+}
+.ooro:hover{
+  color: crimson;
+  border: #406ff3;
+}
+.d-f{
+  color: white;
+}
+
+.navbar {
+  background: #222;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 30px;
+  z-index: 998;
+}
+body.dark .navbar {
+  background: #222;
+}
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.navbar__link {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body.dark .navbar__link {
+  color: #ccc;
+}
+.navbar__link:hover {
+  color: crimson;
+}
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.home .btn {
+  margin: 10px;
+}
+.btn {
+  background: crimson;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px 0px 0px 0px;
+}
+.skills-section .skill-bar {
+  background: #ccc;
+  border-radius: 10px;
+  height: 10px;
+  margin: 10px auto;
+  width: 60%;
+}
+.skill-level {
+  background: #406ff3;
+  height: 100%;
+  transition: width 1s ease;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0px 0px 76px;
+}
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+body.dark .card {
+  background: #222;
+}
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+video {
+  width: 300px;
+  border-radius: 12px;
+}
+.contact form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+.footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.typing{
+  color: crimson
+}

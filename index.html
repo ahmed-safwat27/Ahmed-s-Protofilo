@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Safwat - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("YOUR_USER_ID"); // ✅ استبدل بـ ID من EmailJS
+    })();
+  </script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">Ahmed Safwat</a>
+     <button id="dark-mode-toggle" class="dark-mode-toggle">🌙</button>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <ul class="navbar__menu">
+      <li class="navbar__item"><a href="#home" class="navbar__link"><i class="d-f" data-feather="home"></i><p class="ooro">Home</p></a></li>
+      <li class="navbar__item"><a href="#services" class="navbar__link"><i class="d-f" data-feather="tool"></i><p class="ooro">Services</p></a></li>
+      <li class="navbar__item"><a href="#skills" class="navbar__link"><i class="d-f" data-feather="bar-chart-2"></i><p class="ooro">Skills</p></a></li>
+      <li class="navbar__item"><a href="#portfolio" class="navbar__link"><i class="d-f" data-feather="folder"></i><p class="ooro">Projects</p></a></li>
+      <li class="navbar__item"><a href="#contact" class="navbar__link"><i class="d-f" data-feather="mail"></i><p class="ooro">Contact</p></a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <h1>Hello, I’m <span class="highlight">Ahmed Safwat</span></h1>
+    <h2><span class="typing" id="typing"></span></h2>
+    <p>Welcome to my personal portfolio website</p>
+    <a href="#contact"><button class="btn">Contact Me</button></a>
+    <a href="Ahmed-Safwat-CV.pdf" download><button class="btn">Download CV</button></a>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>My Services</h2>
+    <div class="card-container">
+      <div class="card"><h3>Frontend</h3><p>Modern UI design</p></div>
+      <div class="card"><h3>Backend</h3><p>Secure APIs & Databases</p></div>
+      <div class="card"><h3>Full Stack</h3><p>Complete Website Solutions</p></div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills-section" id="skills">
+    <h2>My Skills</h2>
+    <div class="skill"><div class="skill-name">HTML</div><div class="skill-bar"><div class="skill-level" style="width: 89%;"></div></div></div>
+    <div class="skill"><div class="skill-name">CSS</div><div class="skill-bar"><div class="skill-level" style="width: 78%;"></div></div></div>
+    <div class="skill"><div class="skill-name">JavaScript</div><div class="skill-bar"><div class="skill-level" style="width: 67%;"></div></div></div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>My Projects</h2>
+    <div class="portfolio-container">
+      <video controls><source src="video 1.mp4" type="video/mp4"></video>
+      <video controls><source src="video 2.mp4" type="video/mp4"></video>
+      <video controls><source src="video 3.mp4" type="video/mp4"></video>
+      <video controls><source src="video 4.mp4" type="video/mp4"></video>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <a href="https://wa.me/2001556202384" target="_blank"><button class="btn">WhatsApp Me</button></a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 Ahmed Safwat. All rights reserved.
+  </footer>
+
+  <script>feather.replace();</script>
+</body>
+</html>
